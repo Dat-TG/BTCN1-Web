@@ -1,9 +1,9 @@
-
 * {
     margin: 0;
     padding: 0;
     font-size: 16px;
 }
+
 body {
     width: 100%;
     height: 100vh;
@@ -13,12 +13,14 @@ body {
     margin: 10px auto;
     max-width: 1200px;
 }
+
 #header {
     font-size: 30px;
     text-shadow: 1px 1px 3px #000000, -1px -1px 3px #000000;
-    color:#B1EDFB;
+    color: #B1EDFB;
     letter-spacing: 5px;
 }
+
 header {
     margin: 0;
     height: 6em;
@@ -27,7 +29,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:linear-gradient(to right,#7DDFF6, #30C3E6) ;
+    background-image: linear-gradient(to right, #7DDFF6, #30C3E6);
     font-family: 'Times New Roman', Times, serif;
     border-radius: 5px;
     box-shadow: 3px 3px 5px 1px #888888;
@@ -39,8 +41,9 @@ header {
 }
 
 .atop:hover {
-    color:#FFA207;
+    color: #FFA207;
 }
+
 #nav_top {
     position: absolute;
     display: flex;
@@ -76,8 +79,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding:10px;
+    padding: 10px;
 }
+
 .formContainer>div {
     margin-left: auto;
     margin-right: 0;
@@ -87,43 +91,67 @@ header {
 
 #radiogroup {
     margin-left: 0;
-    margin-right: 219px;
+    margin-right: 319px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
     display: inline-block;
     border: 1px solid #000000;
     padding: 3px;
-    width: 300px;
+    width: 400px;
 }
 
 ul {
+    margin: 10px;
     padding: 10px;
 }
 
 li {
-    display: block;
+    display: flex;
     box-sizing: border-box;
-    margin: 10px;
     padding: 10px;
-    width: 600px;
-    height: 40px;
+    margin: 10px;
+    width: 380px;
+    height: 30px;
     align-items: center;
     background-color: #ffffff;
-    border: 1px solid #000000;
+    border: 1px solid #888888;
 }
 
-.arrowBtn {
-    font-size: 20px;
-    padding: 10px 20px;
+.arrow_button {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.arrow_button>button {
+    width: 30px;
+    height: fit-content;
+    margin: 5px;
     text-align: center;
+    color: #9510D9;
+    border: 1px solid #FFA207;
+    border-radius: 3px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow_button>button:hover {
+    border: 1px solid #b07207;
 }
 
 .bodyContainer {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: auto 360px;
+    grid-template-columns: 73% 360px;
     grid-template-rows: auto;
     width: 100%;
 }
@@ -134,7 +162,7 @@ li {
 }
 
 #main {
-    
+
 }
 
 hr.vertical {
@@ -142,7 +170,7 @@ hr.vertical {
     height: 100%;
     float: left;
     border-left: 2px dotted #1869D8;
-  }
+}
 
 #dkhp_tit {
     color: #FFA207;
@@ -150,8 +178,71 @@ hr.vertical {
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 20px;
-    margin-top:15px;
+    margin-top: 15px;
 }
-#dkhp_hr {
+
+.grayhr {
     border-top: 1.5px solid #808080;
 }
+
+.subject {
+    display: flex;
+    justify-content: center;
+    color: #FFA207;
+    font-weight: bold;
+}
+
+#sub1 {
+    margin-right: 0px;
+
+}
+
+#sub2 {
+    margin-left: 50px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.DKXH {
+    display: flex;
+    justify-content: center;
+}
+.DKXH>button {
+    width: 90px;
+    height: fit-content;
+    margin: 10px;
+    text-align: center;
+    color: #9510D9;
+    border: 1px solid #FFA207;
+    border-radius: 3px;
+}
+.DKXH>button:hover {
+    border: 1px solid #b07207;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    padding: 5px;
+}
+
+thead {
+    background-color: #FFA207;
+    color: #ffffff;
+}
+  
+  tbody tr:nth-child(even){
+    background-color: #FFD8B1;
+    color: #000000;
+  }
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }

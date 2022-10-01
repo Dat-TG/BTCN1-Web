@@ -29,7 +29,7 @@
         <div class="bodyContainer">
             <div id="main">
                 <div id="dkhp_tit">ĐĂNG KÝ HỌC PHẦN</div>
-                <hr id="dkhp_hr">
+                <hr class="grayhr">
                 <form action="" class="formContainer">
                     <div>
                         <label for="MSSV">Mã số:</label>
@@ -63,8 +63,11 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                 </form>
-                <div>
-                    <div>Các môn học</div>
+                <div class="subject">
+                    <div id="sub1">Các môn học</div>
+                    <div id="sub2">Các môn đã chọn</div>
+                </div>
+                <div class="list">
                     <ul>
                         <li>Lập Trình Hướng Đối Tượng</li>
                         <li>Cấu Trúc Dữ Liệu</li>
@@ -74,45 +77,58 @@
                         <li>Phát Triển Ứng Dụng Web</li>
                         <li>Cơ Sở Dữ Liệu</li>
                     </ul>
+                    <div class="arrow_button">
+                        <button>&gt;</button>
+                        <button>&gt;&gt;</button>
+                        <button> &lt; </button>
+                        <button> &lt;&lt; </button>
+                        </div>
+                    <ul>
+                        <li>Nhập môn lập trình</li>
+                        <li>Kỹ thuật lập trình</li>
+                        <li>Lập trình ứng dụng Java</li>
+                    </ul>
                 </div>
-                <button class="arrowBtn">&gt;</button>
-                <button class="arrowBtn">&gt;&gt;</button>
-                <button class="arrowBtn"> &lt; </button>
-                <button class="arrowBtn"> &lt;&lt; </button>
-                <div>Các môn học đã chọn</div>
+                <div class="DKXH">
                 <button>Đăng ký</button>
                 <button>Xóa hết</button>
+                </div>
+                <hr class="grayhr">
                 <table>
+                   <thead>
                     <tr>
                         <th>Mã số</th>
                         <th>Họ và tên</th>
                         <th>Giới tính</th>
                         <th>Ngày sinh</th>
                     </tr>
+                </thead>
+                    <tbody>
                     <tr>
-                        <th>20120001</th>
-                        <th>Nguyễn Thị A</th>
-                        <th>Nữ</th>
-                        <th>07/08/2002</th>
+                        <td>20120001</td>
+                        <td>Nguyễn Thị A</td>
+                        <td>Nữ</td>
+                        <td>07/08/2002</td>
                     </tr>
                     <tr>
-                        <th>20120123</th>
-                        <th>Trần Văn C</th>
-                        <th>Nam</th>
-                        <th>12/24/2002</th>
+                        <td>20120123</td>
+                        <td>Trần Văn C</td>
+                        <td>Nam</td>
+                        <td>12/24/2002</td>
                     </tr>
                     <tr>
-                        <th>20120274</th>
-                        <th>Lê Văn G</th>
-                        <th>Nam</th>
-                        <th>06/13/2002</th>
+                        <td>20120274</td>
+                        <td>Lê Văn G</td>
+                        <td>Nam</td>
+                        <td>06/13/2002</td>
                     </tr>
                     <tr>
-                        <th>20120634</th>
-                        <th>Ngô Thị E</th>
-                        <th>Nữ</th>
-                        <th>10/10/2002</th>
+                        <td>20120634</td>
+                        <td>Ngô Thị E</td>
+                        <td>Nữ</td>
+                        <td>10/10/2002</td>
                     </tr>
+                </tbody>
                 </table>
             </div>
             <div id="side">
