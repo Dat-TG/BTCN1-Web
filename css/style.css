@@ -29,8 +29,37 @@ header {
     align-items: center;
     background-image:linear-gradient(to right,#7DDFF6, #30C3E6) ;
     font-family: 'Times New Roman', Times, serif;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 3px 3px 5px 1px #888888;
+}
+
+.atop {
+    text-decoration: none;
+    color: #1869D8;
+}
+
+.atop:hover {
+    color:#FFA207;
+}
+#nav_top {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 1px #888888;
+    height: 32px;
+    font-size: 15px;
+    background-color: #B5D2FB;
+    width: 600px;
+    left: 0;
+    right: 0;
+    top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .formContainer {
