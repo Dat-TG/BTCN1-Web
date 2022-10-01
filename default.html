@@ -28,25 +28,40 @@
         <hr id="tophr">
         <div class="bodyContainer">
             <div id="main">
-                <div>Đăng ký học phần</div>
+                <div id="dkhp_tit">ĐĂNG KÝ HỌC PHẦN</div>
+                <hr id="dkhp_hr">
                 <form action="" class="formContainer">
-                    <label for="MSSV">Mã số</label>
-                    <input type="text" name="MSSV" id="MSSV" required>
-                    <label for="name">Họ tên</label>
-                    <input type="text" name="name" id="name" required>
-                    <label for="address">Địa chỉ</label>
-                    <input type="text" name="address" id="address" required>
-                    <label for="phone">Điện thoại</label>
-                    <input type="tel" name="phone" id="phone" required>
-                    <label for="sex">Giới tính</label>
-                    <label for="male">Nam</label>
-                    <input type="radio" id="male" name="sex">
-                    <label for="female">Nữ</label>
-                    <input type="radio" id="female" name="sex">
-                    <label for="birth">Ngày sinh</label>
-                    <input type="date" name="birth" id="birth" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <div>
+                        <label for="MSSV">Mã số:</label>
+                        <input type="text" name="MSSV" id="MSSV" required>
+                    </div>
+                    <div>
+                        <label for="name">Họ tên:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="address">Địa chỉ:</label>
+                        <input type="text" name="address" id="address" required>
+                    </div>
+                    <div>
+                        <label for="phone">Điện thoại:</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div id="radiogroup">
+                        <label for="sex">Giới tính:</label>
+                        <input type="radio" id="male" name="sex">
+                        <label for="male">Nam</label>
+                        <input type="radio" id="female" name="sex">
+                        <label for="female">Nữ</label>
+                    </div>
+                    <div>
+                        <label for="birth">Ngày sinh:</label>
+                        <input type="date" name="birth" id="birth" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
                 </form>
                 <div>
                     <div>Các môn học</div>

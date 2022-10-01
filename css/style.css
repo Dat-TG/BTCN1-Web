@@ -64,32 +64,37 @@ header {
 
 #tophr {
     margin-top: 30px;
-    border-top: 2px solid #30C3E6;
+    border-top: 2px solid #1869D8;
 }
 
 #bothr {
-    border-top: 2px solid #30C3E6;
+    border-top: 2px solid #1869D8;
     margin: 0;
 }
 
 .formContainer {
-    padding:10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
+    padding:10px;
+}
+.formContainer>div {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
-input {
-    padding: 15px;
-    margin: 5px 0 5px 0;
+#radiogroup {
+    margin-left: 0;
+    margin-right: 219px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
     display: inline-block;
     border: 1px solid #000000;
-    resize: vertical;
-}
-
-input:focus {
-    background-color: #ddd;
-    outline: none;
+    padding: 3px;
+    width: 300px;
 }
 
 ul {
@@ -136,5 +141,17 @@ hr.vertical {
     width: 0px;
     height: 100%;
     float: left;
-    border-left: 2px dotted #30C3E6;
+    border-left: 2px dotted #1869D8;
   }
+
+#dkhp_tit {
+    color: #FFA207;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top:15px;
+}
+#dkhp_hr {
+    border-top: 1.5px solid #808080;
+}
