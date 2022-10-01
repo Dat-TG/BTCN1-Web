@@ -62,6 +62,16 @@ header {
     padding-right: 10px;
 }
 
+#tophr {
+    margin-top: 30px;
+    border-top: 2px solid #30C3E6;
+}
+
+#bothr {
+    border-top: 2px solid #30C3E6;
+    margin: 0;
+}
+
 .formContainer {
     padding:10px;
     display: flex;
@@ -103,3 +113,28 @@ li {
     padding: 10px 20px;
     text-align: center;
 }
+
+.bodyContainer {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto 360px;
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+#side {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    
+}
+
+hr.vertical {
+    width: 0px;
+    height: 100%;
+    float: left;
+    border-left: 2px dotted #30C3E6;
+  }

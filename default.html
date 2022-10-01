@@ -25,77 +25,90 @@
             <a class="atop" href="#">Menu 4</a>
             <a class="atop" href="#">Menu 5</a>
         </nav>
-        <div>Đăng ký học phần</div>
-        <form action="" class="formContainer">
-            <label for="MSSV">Mã số</label>
-            <input type="text" name="MSSV" id="MSSV" required>
-            <label for="name">Họ tên</label>
-            <input type="text" name="name" id="name" required>
-            <label for="address">Địa chỉ</label>
-            <input type="text" name="address" id="address" required>
-            <label for="phone">Điện thoại</label>
-            <input type="tel" name="phone" id="phone" required>
-            <label for="sex">Giới tính</label>
-            <label for="male">Nam</label>
-            <input type="radio" id="male" name="sex">
-            <label for="female">Nữ</label>
-            <input type="radio" id="female" name="sex">
-            <label for="birth">Ngày sinh</label>
-            <input type="date" name="birth" id="birth" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </form>
-        <div>
-            <div>Các môn học</div>
-            <ul>
-                <li>Lập Trình Hướng Đối Tượng</li>
-                <li>Cấu Trúc Dữ Liệu</li>
-                <li>Lập Trình Windows</li>
-                <li>NM Công Nghệ Phần Mềm</li>
-                <li>Trí Tuệ Nhân Tạo</li>
-                <li>Phát Triển Ứng Dụng Web</li>
-                <li>Cơ Sở Dữ Liệu</li>
-            </ul>
+        <hr id="tophr">
+        <div class="bodyContainer">
+            <div id="main">
+                <div>Đăng ký học phần</div>
+                <form action="" class="formContainer">
+                    <label for="MSSV">Mã số</label>
+                    <input type="text" name="MSSV" id="MSSV" required>
+                    <label for="name">Họ tên</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" name="address" id="address" required>
+                    <label for="phone">Điện thoại</label>
+                    <input type="tel" name="phone" id="phone" required>
+                    <label for="sex">Giới tính</label>
+                    <label for="male">Nam</label>
+                    <input type="radio" id="male" name="sex">
+                    <label for="female">Nữ</label>
+                    <input type="radio" id="female" name="sex">
+                    <label for="birth">Ngày sinh</label>
+                    <input type="date" name="birth" id="birth" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </form>
+                <div>
+                    <div>Các môn học</div>
+                    <ul>
+                        <li>Lập Trình Hướng Đối Tượng</li>
+                        <li>Cấu Trúc Dữ Liệu</li>
+                        <li>Lập Trình Windows</li>
+                        <li>NM Công Nghệ Phần Mềm</li>
+                        <li>Trí Tuệ Nhân Tạo</li>
+                        <li>Phát Triển Ứng Dụng Web</li>
+                        <li>Cơ Sở Dữ Liệu</li>
+                    </ul>
+                </div>
+                <button class="arrowBtn">&gt;</button>
+                <button class="arrowBtn">&gt;&gt;</button>
+                <button class="arrowBtn"> &lt; </button>
+                <button class="arrowBtn"> &lt;&lt; </button>
+                <div>Các môn học đã chọn</div>
+                <button>Đăng ký</button>
+                <button>Xóa hết</button>
+                <table>
+                    <tr>
+                        <th>Mã số</th>
+                        <th>Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Ngày sinh</th>
+                    </tr>
+                    <tr>
+                        <th>20120001</th>
+                        <th>Nguyễn Thị A</th>
+                        <th>Nữ</th>
+                        <th>07/08/2002</th>
+                    </tr>
+                    <tr>
+                        <th>20120123</th>
+                        <th>Trần Văn C</th>
+                        <th>Nam</th>
+                        <th>12/24/2002</th>
+                    </tr>
+                    <tr>
+                        <th>20120274</th>
+                        <th>Lê Văn G</th>
+                        <th>Nam</th>
+                        <th>06/13/2002</th>
+                    </tr>
+                    <tr>
+                        <th>20120634</th>
+                        <th>Ngô Thị E</th>
+                        <th>Nữ</th>
+                        <th>10/10/2002</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="side">
+                <hr class="vertical" />
+                <button>&#9654; &#8597; NEWS 01</button>
+                <button>&#9654; &#8597; NEWS 02</button>
+                <button>&#9654; &#8597; NEWS 03</button>
+                <button>&#9654; &#8597; NEWS 04</button>
+            </div>
         </div>
-        <button class="arrowBtn">></button>
-        <button class="arrowBtn">>></button>
-        <button class="arrowBtn"><</button>
-        <button class="arrowBtn"><<</button>
-        <div>Các môn học đã chọn</div>
-        <button>Đăng ký</button>
-        <button>Xóa hết</button>
-        <table>
-            <tr>
-                <th>Mã số</th>
-                <th>Họ và tên</th>
-                <th>Giới tính</th>
-                <th>Ngày sinh</th>
-            </tr>
-            <tr>
-                <th>20120001</th>
-                <th>Nguyễn Thị A</th>
-                <th>Nữ</th>
-                <th>07/08/2002</th>
-            </tr>
-            <tr>
-                <th>20120123</th>
-                <th>Trần Văn C</th>
-                <th>Nam</th>
-                <th>12/24/2002</th>
-            </tr>
-            <tr>
-                <th>20120274</th>
-                <th>Lê Văn G</th>
-                <th>Nam</th>
-                <th>06/13/2002</th>
-            </tr>
-            <tr>
-                <th>20120634</th>
-                <th>Ngô Thị E</th>
-                <th>Nữ</th>
-                <th>10/10/2002</th>
-            </tr>
-        </table>
+        <hr id="bothr">
         <footer>
             <p>
                 <span>Copyright &copy; Lê Công Đắt</span>
