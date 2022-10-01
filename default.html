@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Đăng ký học phần</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.13.2/themes/overcast/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="view">
+        <header>
+            Bài tập 1 - 20120454
+        </header>
+        <nav>
+            <a href="#">Menu1</a>
+            <a href="#">Menu2</a>
+            <a href="#">Menu3</a>
+            <a href="#">Menu4</a>
+            <a href="#">Menu5</a>
+        </nav>
+        <div>Đăng ký học phần</div>
+        <form action="" class="formContainer">
+            <label for="MSSV">Mã số</label>
+            <input type="text" name="MSSV" id="MSSV" required>
+            <label for="name">Họ tên</label>
+            <input type="text" name="name" id="name" required>
+            <label for="address">Địa chỉ</label>
+            <input type="text" name="address" id="address" required>
+            <label for="phone">Điện thoại</label>
+            <input type="tel" name="phone" id="phone" required>
+            <label for="sex">Giới tính</label>
+            <label for="male">Nam</label>
+            <input type="radio" id="male" name="sex">
+            <label for="female">Nữ</label>
+            <input type="radio" id="female" name="sex">
+            <label for="birth">Ngày sinh</label>
+            <input type="date" name="birth" id="birth" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </form>
+        <div>
+            <div>Các môn học</div>
+            <ul>
+                <li>Lập Trình Hướng Đối Tượng</li>
+                <li>Cấu Trúc Dữ Liệu</li>
+                <li>Lập Trình Windows</li>
+                <li>NM Công Nghệ Phần Mềm</li>
+                <li>Trí Tuệ Nhân Tạo</li>
+                <li>Phát Triển Ứng Dụng Web</li>
+                <li>Cơ Sở Dữ Liệu</li>
+            </ul>
+        </div>
+        <button class="arrowBtn">></button>
+        <button class="arrowBtn">>></button>
+        <button class="arrowBtn"><</button>
+        <button class="arrowBtn"><<</button>
+        <div>Các môn học đã chọn</div>
+        <button>Đăng ký</button>
+        <button>Xóa hết</button>
+        <table>
+            <tr>
+                <th>Mã số</th>
+                <th>Họ và tên</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+            </tr>
+            <tr>
+                <th>20120001</th>
+                <th>Nguyễn Thị A</th>
+                <th>Nữ</th>
+                <th>07/08/2002</th>
+            </tr>
+            <tr>
+                <th>20120123</th>
+                <th>Trần Văn C</th>
+                <th>Nam</th>
+                <th>12/24/2002</th>
+            </tr>
+            <tr>
+                <th>20120274</th>
+                <th>Lê Văn G</th>
+                <th>Nam</th>
+                <th>06/13/2002</th>
+            </tr>
+            <tr>
+                <th>20120634</th>
+                <th>Ngô Thị E</th>
+                <th>Nữ</th>
+                <th>10/10/2002</th>
+            </tr>
+        </table>
+        <footer>
+            <p>
+                <span>Copyright &copy; Lê Công Đắt</span>
+                <a href="#">Menu1</a>
+                <a href="#">Menu2</a>
+                <a href="#">Menu3</a>
+                <a href="#">Menu4</a>
+                <a href="#">Menu5</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
