@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 body {
     width: 100%;
@@ -9,24 +10,27 @@ body {
 }
 
 .view {
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 1200px;
 }
-header {
-    position: sticky;
-    box-sizing: border-box;
-    height: 6em;
+#header {
+    font-size: 30px;
+    text-shadow: 1px 1px 3px #000000, -1px -1px 3px #000000;
     color:#B1EDFB;
+    letter-spacing: 5px;
+}
+header {
+    margin: 0;
+    height: 6em;
+    box-sizing: border-box;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image:linear-gradient(to right,#7DDFF6, #30C3E6) ;
-    font-size: 1em;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 10px;
-    box-shadow: 5px 5px #888888;
-    text-shadow: 0 0 4px #000000;
+    box-shadow: 3px 3px 5px 1px #888888;
 }
 
 .formContainer {
