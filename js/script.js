@@ -373,7 +373,6 @@ $(function () {
             $("#close4").attr("class", "ui-icon ui-icon-triangle-1-s");
         }
     });
-
 })
 
 
@@ -469,3 +468,4 @@ function allowDrop(ev) {
         parent.insertBefore(newNode, insertNode.nextSibling);
     }
   }
+
