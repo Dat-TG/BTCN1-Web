@@ -317,6 +317,62 @@ $(function () {
             arr[i].style.display="flex";
         }
     });
+    $("#close1").on("click", function() {
+        if ($("#content1").css("display")=="flex") {
+            $("#content1").css("display","none");
+            $("#news1").css("background-color","#FFE2B1");
+            $("#news1").css("color", "#FFA207");
+            $("#close1").attr("class", "ui-icon ui-icon-triangle-1-e");
+        }
+        else {
+            $("#content1").css("display","flex");
+            $("#news1").css("background-color","#FFA207");
+            $("#news1").css("color", "#ffffff");
+            $("#close1").attr("class", "ui-icon ui-icon-triangle-1-s");
+        }
+    });
+    $("#close2").on("click", function() {
+        if ($("#content2").css("display")=="flex") {
+            $("#content2").css("display","none");
+            $("#news2").css("background-color","#FFE2B1");
+            $("#news2").css("color", "#FFA207");
+            $("#close2").attr("class", "ui-icon ui-icon-triangle-1-e");
+        }
+        else {
+            $("#content2").css("display","flex");
+            $("#news2").css("background-color","#FFA207");
+            $("#news2").css("color", "#ffffff");
+            $("#close2").attr("class", "ui-icon ui-icon-triangle-1-s");
+        }
+    });
+    $("#close3").on("click", function() {
+        if ($("#content3").css("display")=="flex") {
+            $("#content3").css("display","none");
+            $("#news3").css("background-color","#FFE2B1");
+            $("#news3").css("color", "#FFA207");
+            $("#close3").attr("class", "ui-icon ui-icon-triangle-1-e");
+        }
+        else {
+            $("#content3").css("display","flex");
+            $("#news3").css("background-color","#FFA207");
+            $("#news3").css("color", "#ffffff");
+            $("#close3").attr("class", "ui-icon ui-icon-triangle-1-s");
+        }
+    });
+    $("#close4").on("click", function() {
+        if ($("#content4").css("display")=="flex") {
+            $("#content4").css("display","none");
+            $("#news4").css("background-color","#FFE2B1");
+            $("#news4").css("color", "#FFA207");
+            $("#close4").attr("class", "ui-icon ui-icon-triangle-1-e");
+        }
+        else {
+            $("#content4").css("display","flex");
+            $("#news4").css("background-color","#FFA207");
+            $("#news4").css("color", "#ffffff");
+            $("#close4").attr("class", "ui-icon ui-icon-triangle-1-s");
+        }
+    });
 })
 
 

@@ -279,13 +279,24 @@ sbot {
     background-image: url(/icons/ui-icons_ffffff_256x240.png);
 }
 
-.news {
-    color: #FFA207;
+#news1, #news2, #news3, #news4 {
+    color: #ffffff;
 }
 
 .newscontainer {
-    background-color: #FFE2B1;
+    background-color: #FFA207;
     border: 0.1px solid #FFCF7E;
     margin: 1px;
     font-size: larger;
+}
+
+#content1, #content2, #content3, #content4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    padding: 10px;
+    color: #1869D8;
 }
