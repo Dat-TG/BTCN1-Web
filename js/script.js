@@ -101,6 +101,21 @@ $(function () {
             $(this).submit();
         }
     });
+    $("#delAll").on("click", function() {
+        $("#email").val("");
+        $("#email").css("background-color","#ffffff");
+        $("#name").val("");
+        $("#name").css("background-color","#ffffff");
+        $("#phone").val("");
+        $("#phone").css("background-color","#ffffff");
+        $("#MSSV").val("");
+        $("#MSSV").css("background-color","#ffffff");
+        $("#male").prop("checked", false);
+        $("#female").prop("checked",false);
+        $("#birth").val("");
+        $("#address").val("");
+        $("#address").css("background-color","#ffffff");
+    })
 })
 
 
