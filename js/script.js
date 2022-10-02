@@ -115,6 +115,33 @@ $(function () {
         $("#birth").val("");
         $("#address").val("");
         $("#address").css("background-color", "#ffffff");
+        var arr = $(".daChon").children();
+        var cnt = 0;
+        var arr1 = [];
+        var cnt=0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].innerHTML!="") {
+                cnt++;
+                arr1.push(arr[i]);
+            }
+        }
+        var arr2 = $(".chuaChon").children();
+        var j=0;
+        for (var i = 0; i < arr2.length && j<cnt; i++) {
+            if (arr2[i].innerHTML == "") {
+                arr2[i].style.visibility = "visible";
+                arr2[i].style.display="flex";
+                arr2[i].innerHTML = arr1[j].innerHTML;
+                arr1[j].innerHTML = "";
+                arr2[i].style.color = "black";
+                arr2[i].style.backgroundColor = "white";
+                j++;
+            }
+        }
+        for (var i=0;i<arr.length;i++) {
+            arr[i].style.visibility="hidden";
+            arr[i].style.display="flex";
+        }
     });
     $(".daChon").css('visibility', 'hidden');
     $(".chuaChon").children().on("click", function () {
