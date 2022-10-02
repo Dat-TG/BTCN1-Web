@@ -147,24 +147,53 @@ $(function () {
             }
         }
         var arr2 = $(".daChon").children();
-        for (var i = 0; i < arr2.length && cnt>0; i++) {
+        var j=0;
+        for (var i = 0; i < arr2.length && j<cnt; i++) {
             if (arr2[i].innerHTML == "") {
                 arr2[i].style.visibility = "visible";
                 var temp = arr2[i].innerHTML;
-                arr2[i].innerHTML = arr1[cnt-1].innerHTML;
-                arr1[cnt-1].innerHTML = temp;
-                arr1[cnt-1].style.color = "black";
-                arr1[cnt-1].style.backgroundColor = "white";
+                arr2[i].innerHTML = arr1[j].innerHTML;
+                arr1[j].innerHTML = temp;
+                arr1[j].style.color = "black";
+                arr1[j].style.backgroundColor = "white";
                 arr2[i].style.color = "black";
                 arr2[i].style.backgroundColor = "#FFE2B1";
                 console.log("Giá trị cũ: ", temp);
-                cnt--;
+                j++;
             }
         }
         if (cnt_chuachon<=0) {
             arr = $(".chuaChon").children();
             arr[0].style.display="flex";
             arr[0].style.visibility="hidden";
+        }
+    });
+    $("#addAll").on("click", function() {
+        var arr = $(".chuaChon").children();
+        var cnt = 0;
+        var arr1 = [];
+        var cnt=0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].innerHTML!="") {
+                cnt++;
+                arr1.push(arr[i]);
+            }
+        }
+        var arr2 = $(".daChon").children();
+        var j=0;
+        for (var i = 0; i < arr2.length && j<cnt; i++) {
+            if (arr2[i].innerHTML == "") {
+                arr2[i].style.visibility = "visible";
+                arr1[i].style.visibility = "hidden";
+                var temp = arr2[i].innerHTML;
+                arr2[i].innerHTML = arr1[j].innerHTML;
+                arr1[j].innerHTML = temp;
+                arr1[j].style.color = "black";
+                arr1[j].style.backgroundColor = "white";
+                arr2[i].style.color = "black";
+                arr2[i].style.backgroundColor = "#FFE2B1";
+                j++;
+            }
         }
     });
 })
