@@ -373,6 +373,7 @@ $(function () {
             $("#close4").attr("class", "ui-icon ui-icon-triangle-1-s");
         }
     });
+
 })
 
 
@@ -432,3 +433,39 @@ function checkID(ID) {
     }
     return 1;
 }
+
+function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    var insertNode=ev.target;
+    if (insertNode.className!="insert") {
+        insertNode=insertNode.parentNode;
+    }
+    if (insertNode.className!="insert") {
+        insertNode=insertNode.parentNode;
+    }
+    console.log("parent:",insertNode.parentNode.id);
+    console.log("new node:",data);
+    var newNode=document.getElementById(data);
+    var parent=document.getElementById("side");
+    var clientRect = newNode.getBoundingClientRect();
+    var oldX = clientRect.top;
+    clientRect = insertNode.getBoundingClientRect();
+    var newX = clientRect.top;
+    console.log("oldX",oldX);
+    console.log("newX", newX);
+    if (newX<oldX) {
+        parent.insertBefore(newNode, insertNode);
+    }
+    else {
+        parent.insertBefore(newNode, insertNode.nextSibling);
+    }
+  }

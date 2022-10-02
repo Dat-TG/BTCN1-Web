@@ -147,37 +147,55 @@
             </div>
             <div id="side">
                 <hr class="vertical" />
-                <div class="newscontainer" id="news1">
-                    <span class=" ui-icon ui-icon-triangle-1-s" id="close1"></span>
-                    <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
-                    <span class="news">NEWS 01</span>
+                <div id="new1" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" class="insert"
+                    ondragover="allowDrop(event)">
+                    <div class="newscontainer" id="news1" order="1">
+                        <span class=" ui-icon ui-icon-triangle-1-s" id="close1"></span>
+                        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                        <span class="news">NEWS 01</span>
+                    </div>
+                    <div>
+                        <p id="content1">content content content content content content content content content content
+                            content content content content</p>
+                    </div>
                 </div>
-                <div >
-                    <p id="content1">content content content content content content content content content content content content content content</p>
+                <div id="new2" class="insert" draggable="true" ondragstart="drag(event)" ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <div class="newscontainer" id="news2" order="2">
+                        <span class=" ui-icon ui-icon-triangle-1-s" id="close2"></span>
+                        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                        <span class="news">NEWS 02</span>
+                    </div>
+                    <div>
+                        <p id="content2">content content content content content content content content content content
+                            content content content content</p>
+                    </div>
                 </div>
-                <div class="newscontainer" id="news2">
-                    <span class=" ui-icon ui-icon-triangle-1-s" id="close2"></span>
-                    <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
-                    <span class="news">NEWS 02</span>
+                <div id="new3" class="insert" draggable="true" ondragstart="drag(event)" ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <div class="newscontainer" id="news3" order="3">
+                        <span class=" ui-icon ui-icon-triangle-1-s" id="close3"></span>
+                        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                        <span class="news">NEWS 03</span>
+                    </div>
+                    <div>
+                        <p id="content3">content content content content content content content content content content
+                            content content content content content content content content content content content
+                            content
+                            content content content content content content</p>
+                    </div>
                 </div>
-                <div >
-                    <p id="content2">content content content content content content content content content content content content content content</p>
-                </div>
-                <div class="newscontainer" id="news3">
-                    <span class=" ui-icon ui-icon-triangle-1-s" id="close3"></span>
-                    <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
-                    <span class="news">NEWS 03</span>
-                </div>
-                <div >
-                    <p id="content3">content content content content content content content content content content content content content content content content content content content content content content content content content content content content</p>
-                </div>
-                <div class="newscontainer" id="news4">
-                    <span class=" ui-icon ui-icon-triangle-1-s" id="close4"></span>
-                    <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
-                    <span class="news">NEWS 04</span>
-                </div>
-                <div >
-                    <p id="content4">content content content content content content content content content content content content content content</p>
+                <div id="new4" class="insert" draggable="true" ondragstart="drag(event)" ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <div class="newscontainer" id="news4" order="4">
+                        <span class=" ui-icon ui-icon-triangle-1-s" id="close4"></span>
+                        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                        <span class="news">NEWS 04</span>
+                    </div>
+                    <div>
+                        <p id="content4">content content content content content content content content content content
+                            content content content content</p>
+                    </div>
                 </div>
             </div>
         </div>
