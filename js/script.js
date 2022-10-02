@@ -139,7 +139,7 @@ $(function () {
             }
         }
         for (var i = 0; i < arr.length; i++) {
-            if (arr[i].style.color == "rgb(255, 255, 255)") {
+            if (arr[i].style.color == "rgb(255, 255, 255)" && arr[i].innerHTML!="") {
                 arr[i].style.display = "none";
                 cnt++;
                 cnt_chuachon--;
@@ -150,15 +150,12 @@ $(function () {
         var j=0;
         for (var i = 0; i < arr2.length && j<cnt; i++) {
             if (arr2[i].innerHTML == "") {
-                arr2[i].style.visibility = "visible";
-                var temp = arr2[i].innerHTML;
+                arr2[i].style.display="flex";
+                arr2[i].style.visibility="visible";
                 arr2[i].innerHTML = arr1[j].innerHTML;
-                arr1[j].innerHTML = temp;
-                arr1[j].style.color = "black";
-                arr1[j].style.backgroundColor = "white";
+                arr1[j].innerHTML = "";
                 arr2[i].style.color = "black";
                 arr2[i].style.backgroundColor = "#FFE2B1";
-                console.log("Giá trị cũ: ", temp);
                 j++;
             }
         }
@@ -184,16 +181,93 @@ $(function () {
         for (var i = 0; i < arr2.length && j<cnt; i++) {
             if (arr2[i].innerHTML == "") {
                 arr2[i].style.visibility = "visible";
-                arr1[i].style.visibility = "hidden";
-                var temp = arr2[i].innerHTML;
                 arr2[i].innerHTML = arr1[j].innerHTML;
-                arr1[j].innerHTML = temp;
-                arr1[j].style.color = "black";
-                arr1[j].style.backgroundColor = "white";
+                arr1[j].innerHTML = "";
                 arr2[i].style.color = "black";
                 arr2[i].style.backgroundColor = "#FFE2B1";
                 j++;
             }
+        }
+        for (var i=0;i<arr.length;i++) {
+            arr[i].style.visibility="hidden";
+            arr[i].style.display="flex";
+        }
+    });
+    $(".daChon").children().on("click", function () {
+        console.log($(this).css("color"));
+        if ($(this).css("color")=="rgb(0, 0, 0)") {
+            $(this).css("background-color", "#FFA207");
+            $(this).css("color", "white");
+        }
+        else {
+            $(this).css("background-color", "#FFE2B1");
+            $(this).css("color", "black");
+        }
+    });
+    $("#xoa1").on("click", function() {
+        var arr = $(".daChon").children();
+        var cnt = 0;
+        var arr1 = [];
+        var cnt_chuachon=0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].innerHTML!="") {
+                cnt_chuachon++;
+            }
+        }
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].style.color == "rgb(255, 255, 255)" && arr[i].innerHTML!="") {
+                arr[i].style.display = "none";
+                cnt++;
+                cnt_chuachon--;
+                arr1.push(arr[i]);
+            }
+        }
+        var arr2 = $(".chuaChon").children();
+        var j=0;
+        for (var i = 0; i < arr2.length && j<cnt; i++) {
+            if (arr2[i].innerHTML == "") {
+                arr2[i].style.visibility = "visible";
+                arr2[i].style.display="flex";
+                arr2[i].innerHTML = arr1[j].innerHTML;
+                arr1[j].innerHTML = "";
+                arr2[i].style.color = "black";
+                arr2[i].style.backgroundColor = "white";
+                j++;
+            }
+        }
+        if (cnt_chuachon<=0) {
+            arr = $(".daChon").children();
+            arr[0].style.display="flex";
+            arr[0].style.visibility="hidden";
+        }
+    });
+    $("#xoaAll").on("click",function() {
+        var arr = $(".daChon").children();
+        var cnt = 0;
+        var arr1 = [];
+        var cnt=0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].innerHTML!="") {
+                cnt++;
+                arr1.push(arr[i]);
+            }
+        }
+        var arr2 = $(".chuaChon").children();
+        var j=0;
+        for (var i = 0; i < arr2.length && j<cnt; i++) {
+            if (arr2[i].innerHTML == "") {
+                arr2[i].style.visibility = "visible";
+                arr2[i].style.display="flex";
+                arr2[i].innerHTML = arr1[j].innerHTML;
+                arr1[j].innerHTML = "";
+                arr2[i].style.color = "black";
+                arr2[i].style.backgroundColor = "white";
+                j++;
+            }
+        }
+        for (var i=0;i<arr.length;i++) {
+            arr[i].style.visibility="hidden";
+            arr[i].style.display="flex";
         }
     });
 })
