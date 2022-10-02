@@ -162,9 +162,7 @@ li {
     padding: 0;
 }
 
-#main {
-
-}
+#main {}
 
 hr.vertical {
     width: 0px;
@@ -211,6 +209,7 @@ hr.vertical {
     display: flex;
     justify-content: center;
 }
+
 .DKXH>button {
     width: 90px;
     height: fit-content;
@@ -220,11 +219,13 @@ hr.vertical {
     border: 1px solid #FFA207;
     border-radius: 3px;
 }
+
 .DKXH>button:hover {
     border: 1px solid #b07207;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
 }
 
@@ -237,39 +238,51 @@ thead {
     background-color: #FFA207;
     color: #ffffff;
 }
-  
-  tbody tr:nth-child(even){
+
+tbody tr:nth-child(even) {
     background-color: #FFD8B1;
     color: #000000;
-  }
+}
 
-  td {
+td {
     text-align: center;
     vertical-align: middle;
-  }
+}
+
+tbody tr td:nth-child(2) {
+    text-align: left;
+}
 
 footer {
     display: flex;
     justify-content: center;
     background-color: #FFE2B1;
-    color:#FFA207;
+    color: #FFA207;
     margin-top: 5px;
 }
 
 .abot {
     color: #FFA207;
+    margin: 0 5px;
 }
-.abot:hover{
+
+sbot {
+    margin: 0 5px;
+}
+
+.abot:hover {
     color: #ffffff;
     background-color: #FFA207;
 }
-.ui-icon
-{
+
+.ui-icon {
     background-image: url(/icons/ui-icons_ffffff_256x240.png);
 }
+
 .news {
     color: #FFA207;
 }
+
 .newscontainer {
     background-color: #FFE2B1;
     border: 0.1px solid #FFCF7E;
