@@ -1,7 +1,7 @@
 var wrongColor="#FFB1B8";
 var rightColor="#BDFDB0";
 $(function () {
-    $("#email").on("blur input change paste ",function () {
+    $("#email").on("blur input change paste",function () {
         var ok = checkEmail($(this).val());
         if (ok == 1) {
             console.log("Email không hợp lệ");
@@ -11,7 +11,7 @@ $(function () {
             $(this).css("background-color",rightColor);
         }
     });
-    $("#phone").on("blur input change paste ",function () {
+    $("#phone").on("blur input change paste",function () {
         var ok = checkPhoneNumber($(this).val());
         if (ok == 1) {
             console.log("Số điện thoại không hợp lệ");
@@ -21,7 +21,7 @@ $(function () {
             $(this).css("background-color",rightColor);
         }
     });
-    $("#name").on("blur input change paste ", function() {
+    $("#name").on("blur input change paste", function() {
         var ok=checkNameAndAddress($(this).val());
         if (ok==1) {
             console.log("Tên không hợp lệ");
@@ -31,7 +31,7 @@ $(function () {
             $(this).css("background-color",rightColor);
         }
     })
-    $("#address").on("blur input change paste ", function() {
+    $("#address").on("blur input change paste", function() {
         var ok=checkNameAndAddress($(this).val());
         if (ok==1) {
             console.log("Địa chỉ không hợp lệ");
@@ -41,7 +41,7 @@ $(function () {
             $(this).css("background-color",rightColor);
         }
     })
-    $("#MSSV").on("blur input change paste ", function() {
+    $("#MSSV").on("blur input change paste", function() {
         var ok=checkID($(this).val());
         if (ok==1) {
             console.log("MSSV không hợp lệ");
@@ -51,12 +51,56 @@ $(function () {
             $(this).css("background-color",rightColor);
         }
     })
-    /*$("form").submit(function (event) {
-        var ok = checkUserName($("#username").val()) || checkUpperCase($("#name").val()) || checkEmail($("#email").val()) || checkAge($("#birth").val()) || checkPhoneNumber($("#phone").val()) || checkPassWord($("#pass").val()) || checkPassWordReype($("#pass_retype").val());
-        if (ok) {
-            event.preventDefault();
+    $("#myForm").on("submit",function (event) {
+        event.preventDefault();
+        var ok1 = checkEmail($("#email").val()), ok2=checkID($("#MSSV").val()),ok3=checkNameAndAddress($("#name").val()),ok4=checkNameAndAddress($("#address").val()),ok5=checkPhoneNumber($("#phone").val());
+        console.log(ok1,ok2,ok3,ok4,ok5);
+        if (ok1) {
+            console.log("Email không hợp lệ");
+            $("#email").css("background-color",wrongColor);
         }
-    });*/
+        else {
+            $("#email").css("background-color",rightColor);
+        }
+
+        if (ok5) {
+            console.log("Số điện thoại không hợp lệ");
+            $("#phone").css("background-color",wrongColor);
+        }
+        else {
+            $("#phone").css("background-color",rightColor);
+        }
+
+        if (ok3) {
+            console.log("Tên không hợp lệ");
+            $("#name").css("background-color",wrongColor);
+        }
+        else {
+            $("#name").css("background-color",rightColor);
+        }
+
+        if (ok4) {
+            console.log("Địa chỉ không hợp lệ");
+            $("#address").css("background-color",wrongColor);
+        }
+        else {
+            $("#address").css("background-color",rightColor);
+        }
+
+        if (ok2) {
+            console.log("MSSV không hợp lệeeeee");
+            $("#MSSV").attr("value","MSSV sai");
+            $("#MSSV").css({"background-color":wrongColor});
+            console.log("wrong color is", wrongColor);
+            console.log($("#MSSV").css("background-color"));
+        }
+        else {
+            $("#MSSV").css("background-color",rightColor);
+        }
+        if (!(ok1||ok2||ok3||ok4||ok5)) {
+            $(this).submit();
+        }
+    });
 })
 
 

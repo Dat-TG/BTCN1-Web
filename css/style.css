@@ -151,7 +151,7 @@ li {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 73% 360px;
+    grid-template-columns: 70% 360px;
     grid-template-rows: auto;
     width: 100%;
 }
@@ -246,3 +246,32 @@ thead {
     text-align: center;
     vertical-align: middle;
   }
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #FFE2B1;
+    color:#FFA207;
+    margin-top: 5px;
+}
+
+.abot {
+    color: #FFA207;
+}
+.abot:hover{
+    color: #ffffff;
+    background-color: #FFA207;
+}
+.ui-icon
+{
+    background-image: url(/icons/ui-icons_ffffff_256x240.png);
+}
+.news {
+    color: #FFA207;
+}
+.newscontainer {
+    background-color: #FFE2B1;
+    border: 0.1px solid #FFCF7E;
+    margin: 1px;
+    font-size: larger;
+}

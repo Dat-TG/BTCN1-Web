@@ -30,10 +30,11 @@
             <div id="main">
                 <div id="dkhp_tit">ĐĂNG KÝ HỌC PHẦN</div>
                 <hr class="grayhr">
-                <form action="" class="formContainer">
+                <form action="" class="formContainer" id="myForm">
                     <div>
                         <label for="MSSV">Mã số:</label>
-                        <input type="text" name="MSSV" id="MSSV" title="Mã số sinh viên gồm 8 chữ số và 2 chữ số đầu từ 17 đến 22" required>
+                        <input type="text" name="MSSV" id="MSSV"
+                            title="Mã số sinh viên gồm 8 chữ số và 2 chữ số đầu từ 17 đến 22" required>
                     </div>
                     <div>
                         <label for="name">Họ tên:</label>
@@ -41,11 +42,13 @@
                     </div>
                     <div>
                         <label for="address">Địa chỉ:</label>
-                        <input type="text" name="address" id="address" title="Địa chỉ phải có ít nhất 2 từ trở lên" required>
+                        <input type="text" name="address" id="address" title="Địa chỉ phải có ít nhất 2 từ trở lên"
+                            required>
                     </div>
                     <div>
                         <label for="phone">Điện thoại:</label>
-                        <input type="tel" name="phone" id="phone" title="Số điện thoại gồm 10 chữ số và bắt đầu bằng chữ số 0" required>
+                        <input type="tel" name="phone" id="phone"
+                            title="Số điện thoại gồm 10 chữ số và bắt đầu bằng chữ số 0" required>
                     </div>
                     <div id="radiogroup">
                         <label for="sex">Giới tính:</label>
@@ -60,7 +63,8 @@
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" title="Bạn cần nhập chính xác địa chỉ email" required>
+                        <input type="email" id="email" name="email" title="Bạn cần nhập chính xác địa chỉ email"
+                            required>
                     </div>
                 </form>
                 <div class="subject">
@@ -82,7 +86,7 @@
                         <button>&gt;&gt;</button>
                         <button> &lt; </button>
                         <button> &lt;&lt; </button>
-                        </div>
+                    </div>
                     <ul>
                         <li>Nhập môn lập trình</li>
                         <li>Kỹ thuật lập trình</li>
@@ -90,64 +94,80 @@
                     </ul>
                 </div>
                 <div class="DKXH">
-                <button>Đăng ký</button>
-                <button>Xóa hết</button>
+                    <button id="dk" form="myForm" type="submit">Đăng ký</button>
+                    <button>Xóa hết</button>
                 </div>
                 <hr class="grayhr">
                 <table>
-                   <thead>
-                    <tr>
-                        <th>Mã số</th>
-                        <th>Họ và tên</th>
-                        <th>Giới tính</th>
-                        <th>Ngày sinh</th>
-                    </tr>
-                </thead>
+                    <thead>
+                        <tr>
+                            <th>Mã số</th>
+                            <th>Họ và tên</th>
+                            <th>Giới tính</th>
+                            <th>Ngày sinh</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                    <tr>
-                        <td>20120001</td>
-                        <td>Nguyễn Thị A</td>
-                        <td>Nữ</td>
-                        <td>07/08/2002</td>
-                    </tr>
-                    <tr>
-                        <td>20120123</td>
-                        <td>Trần Văn C</td>
-                        <td>Nam</td>
-                        <td>12/24/2002</td>
-                    </tr>
-                    <tr>
-                        <td>20120274</td>
-                        <td>Lê Văn G</td>
-                        <td>Nam</td>
-                        <td>06/13/2002</td>
-                    </tr>
-                    <tr>
-                        <td>20120634</td>
-                        <td>Ngô Thị E</td>
-                        <td>Nữ</td>
-                        <td>10/10/2002</td>
-                    </tr>
-                </tbody>
+                        <tr>
+                            <td>20120001</td>
+                            <td>Nguyễn Thị A</td>
+                            <td>Nữ</td>
+                            <td>07/08/2002</td>
+                        </tr>
+                        <tr>
+                            <td>20120123</td>
+                            <td>Trần Văn C</td>
+                            <td>Nam</td>
+                            <td>12/24/2002</td>
+                        </tr>
+                        <tr>
+                            <td>20120274</td>
+                            <td>Lê Văn G</td>
+                            <td>Nam</td>
+                            <td>06/13/2002</td>
+                        </tr>
+                        <tr>
+                            <td>20120634</td>
+                            <td>Ngô Thị E</td>
+                            <td>Nữ</td>
+                            <td>10/10/2002</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <div id="side">
                 <hr class="vertical" />
-                <button>&#9654; &#8597; NEWS 01</button>
-                <button>&#9654; &#8597; NEWS 02</button>
-                <button>&#9654; &#8597; NEWS 03</button>
-                <button>&#9654; &#8597; NEWS 04</button>
+                <div class="newscontainer">
+                    <span class="ui-icon ui-icon-triangle-1-e"></span>
+                    <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                    <span class="news">NEWS 01</span>
+                </div>
+                <div class="newscontainer">
+                    <span class="ui-icon ui-icon-triangle-1-e"></span>
+                    <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                    <span class="news">NEWS 02</span>
+                </div>
+                <div class="newscontainer">
+                    <span class="ui-icon ui-icon-triangle-1-e"></span>
+                    <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                    <span class="news">NEWS 03</span>
+                </div>
+                <div class="newscontainer">
+                    <span class="ui-icon ui-icon-triangle-1-e"></span>
+                    <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                    <span class="news">NEWS 04</span>
+                </div>
             </div>
         </div>
         <hr id="bothr">
         <footer>
             <p>
                 <span>Copyright &copy; Lê Công Đắt</span>
-                <a href="#">Menu1</a>
-                <a href="#">Menu2</a>
-                <a href="#">Menu3</a>
-                <a href="#">Menu4</a>
-                <a href="#">Menu5</a>
+                <a class="abot" href="#">Menu 1</a>
+                <a class="abot" href="#">Menu 2</a>
+                <a class="abot" href="#">Menu 3</a>
+                <a class="abot" href="#">Menu 4</a>
+                <a class="abot" href="#">Menu 5</a>
             </p>
         </footer>
     </div>
